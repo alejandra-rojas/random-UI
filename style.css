@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: blueviolet;
+  text-align: center;
+  font-family: monospace;
+  color: #bfbfbf;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+form {
+  padding-top: 20px;
+}
+
+form input,
+form button {
+  padding: 20px;
+  font-family: "Courier New", Courier, monospace;
+  border-style: none;
+}
+
+form button {
+  margin-left: -6px;
+}
+.error-message {
+  margin-top: 20px;
+  background-color: greenyellow;
+  border-radius: 3px;
+  padding: 1rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.success-message {
+  text-transform: uppercase;
+  background-color: palegreen;
+  padding: 1.5rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
+  position: relative;
+  top: -50px;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.success-message button {
+  padding: 10px;
+  border-style: none;
+  margin-top: 15px;
+  background-color: purple;
+  border-radius: 5px;
+  color: whitesmoke;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+.invisible {
+  display: none;
+}
+
+.animation {
+  animation: headShake; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+.animate {
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}

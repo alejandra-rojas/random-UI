@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🔮 Guess the num</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div class="content">
+      <p id="icon" style="font-size: 48px">🔮</p>
+      <div id="container">
+        <h1 class="title">GUESS THE NUMBER</h1>
+        <p class="instructions">choose between 1 - 100</p>
+        <form id="guessForm">
+          <input type="text" name="input" size="8" id="guess" required />
+          <button>Guess</button>
+        </form>
+      </div>
+      <div class="error-message" id="errorMessage"></div>
+      <div class="success-message" id="successMessage">
+        You guessed it!<br />
+        <button id="play">Play again</button>
+      </div>
+    </div>
+
+    <script src="random.js"></script>
+  </body>
+</html>
